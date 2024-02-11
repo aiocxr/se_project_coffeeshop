@@ -1,0 +1,66 @@
+.about {
+  padding: 119px 80px 172px;
+  overflow: hidden;
+  position: relative;
+  background-color: #0a2750;
+  display: flex;
+}
+
+.about__title {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+  color: white;
+  max-width: 251px;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.about__content {
+  max-width: 660px;
+  margin-left: auto;
+}
+
+.about__paragraph {
+  font-family: "Noto Serif", "Times New Roman", Times, serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  color: white;
+  margin: 0 0 20px;
+}
+
+.about__paragraph:last-of-type {
+  margin-bottom: 0;
+}
+
+.about__circle {
+  background-color: #2f80ed;
+  width: 426px;
+  height: 426px;
+  border-radius: 50%;
+  position: absolute;
+  top: -152px;
+  left: -129px;
+}
+
+.about__circle_animation_blurred {
+  animation: pulsate 1.3s ease-in-out infinite;
+}
+
+@keyframes pulsate {
+  from {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  to {
+    opacity: 1.4;
+    transform: scale(1.1);
+  }
+}
